@@ -28,7 +28,7 @@ export default function About() {
               </p>
             </article>
             <picture data-aos="fade-up">
-              /<img src="logomarca.jpg" alt="avatar.webp" />
+              /<img src="logomarca.png" alt="avatar.webp" />
             </picture>
           </div>
         </div>

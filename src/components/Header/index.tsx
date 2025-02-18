@@ -36,7 +36,7 @@ export default function Header() {
         <nav>
           <div id="logo">
             <a href="/">
-              <img src="/logo.png" alt="" style={{ width: 40 }} />
+              <img src="/logomarca.jpg" alt="" style={{ width: 90 }} />
             </a>
           </div>
           <div className={active ? 'nav-menu  active' : 'nav-menu '}>
@@ -49,11 +49,9 @@ export default function Header() {
                 <a href="#inicio">HOME</a>
               </li>
               <li>
-                <a href="#skills">TECNOLOGIAS</a>
+                <a href="#skills">SERVIÇOS</a>
               </li>
-              <li>
-                <a href="#cliente">CLIENTES</a>
-              </li>
+
               <li>
                 <a href="#about">SOBRE</a>
               </li>

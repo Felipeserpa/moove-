@@ -13,11 +13,22 @@ export default function Presentation() {
             somos a <span />
           </h1>
           <h1>
-            Stechnology
+            Moove +
             <span />
           </h1>
-          <a href="#portfolio" type="button" className="cta">
-            <button type="button">Portfólio</button>
+          <div className="relative inset-x-0 top-0 h-10 flex justify-center items-center">
+            <p className="text-center">
+              Oferecemos transporte exclusivo
+              <br /> e seguro para idosos, garantido conforto <br /> e bem-estar
+              durante todo trajeto
+            </p>
+          </div>
+          <a
+            href="https://wa.me/message/VOG6YD5POXPPG1"
+            type="button"
+            className="cta"
+          >
+            <button type="button">Agende um horário conosco</button>
           </a>
         </div>
       </div>

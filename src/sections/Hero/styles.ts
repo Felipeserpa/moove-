@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   .presentation {
     height: 100vh;
-    background-image: url(/onur-binay-_yC2htzMYnI-unsplash.webp);
+    background-image: url(/foto1.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -26,7 +26,7 @@ const Container = styled.div`
   }
 
   .presentation div {
-    padding-top: 9.7rem;
+    padding-top: 5rem;
     @media (max-width: 930px) {
       padding-top: 20px;
     }
@@ -34,12 +34,13 @@ const Container = styled.div`
 
   .presentation h1 {
     display: block;
-    width: fit-content;
+    width: 700px;
     font-size: 5rem;
     position: relative;
     color: ${(props) => props.theme.transparent};
     animation: text_reveal 0.5 ease forwards;
     animation-delay: 1.5s;
+    padding-left: 20px;
   }
 
   .presentation h1:nth-child(1) {

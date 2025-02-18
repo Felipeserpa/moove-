@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb:hover {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center ;
   justify-content: center;
 }
 

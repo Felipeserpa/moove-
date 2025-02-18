@@ -9,27 +9,26 @@ export default function About() {
           <h1 className="section-title text-white">Sobre Mim</h1>
           <div className="section-container">
             <article>
-              <p>Olá,Somos a Stechnology.</p>
+              <p>Olá,Somos a MOOVE +</p>
               <p>
-                A Stechnology é uma empresa apaixonada por tecnologia e focada
-                em transformar ideias em soluções digitais inovadoras. Desde o
-                início de nossas atividades, em 2022, nos dedicamos a criar
-                sites, sistemas web e aplicativos mobile que impulsionam os
-                negócios de nossos clientes. Com uma equipe experiente e
-                multidisciplinar, oferecemos soluções personalizadas e de alta
-                qualidade, sempre alinhadas às necessidades e objetivos de cada
-                cliente. Nossa missão é simplificar a vida das pessoas através
-                da tecnologia, proporcionando experiências digitais intuitivas e
-                eficientes.
+                Na MOOVE+, oferecemos serviços de transporte especialmente
+                pensados para os idosos, garantindo viagens seguras e
+                confortáveis.
               </p>
-              <p>Nossos serviços:</p>
-              <li>Desenvolvimento de sites personalizados</li>
-              <li>Criação de sistemas web sob medida;</li>
-              <li>Desenvolvimento de aplicativos mobile para iOS e Android;</li>
-              <li>Manutenção e suporte técnico.</li>
+              <p>Nossos diferenciais</p>
+              <ul>
+                <li>Transporte exclusivo</li>
+                <li>Motoristas experientes e atenciosos</li>
+                <li>Conforto</li>
+                <li>Veículos adaptados</li>
+                <li>Preços acessíveis</li>
+              </ul>
+              <p>
+                Agende sua próxima viagem conosco e experimente a diferença!
+              </p>
             </article>
             <picture data-aos="fade-up">
-              /<img src="logo.png" alt="avatar.webp" />
+              /<img src="logomarca.jpg" alt="avatar.webp" />
             </picture>
           </div>
         </div>

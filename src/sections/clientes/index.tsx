@@ -6,7 +6,7 @@ export default function cliente() {
     <Container>
       <section className="section-grey " id="cliente">
         <div className="container">
-          <h1 className="section-title text-blue">Clientes</h1>
+          <h1 className="section-title text-blue">Galeria de Fotos</h1>
           <div className="section-container">
             <Cards />
           </div>

@@ -24,11 +24,25 @@ export default function Skills() {
               <div className="section-container">
                 <article className="text-center">
                   <p>
-                    A Moove compreende as necessidades especiais de mobilidade
-                    dos idosos e oferece um serviço de transporte dedicado,
-                    projetado para proporcionar segurança, conforto e
-                    independência.
+                    Nosso serviço de transporte é pensado para aqueles que
+                    precisam de um deslocamento seguro e confortável para
+                    consultas médicas,fisioterapias,academias,eventos e muito
+                    mais.Com um olhar humanizado,buscamos proporcionar não
+                    apenas uma viagem,mas um momento de acolhimento e bem-estar.
                   </p>
+
+                  <p>Nossos diferenciais:</p>
+                  <ul>
+                    <p>Veiculo confortável e seguro</p>
+                    <p>Atendimento humanizado e atencioso</p>
+                    <p>Segurança e tranquilidade em cada trajeto</p>
+                  </ul>
+                  <p>
+                    Na MOOVE+,mais do que transportar,cuidamos de cada detalhe
+                    para que nossos passageiros sinta-se acolhidos e
+                    respeitados.
+                  </p>
+                  <p>Entre em contato e agende seu transporte conosco!</p>
                 </article>
                 <h1>OBservação:</h1>
                 <p>AQUI Ira ter o CARDS do servicos e suas descriçao</p>

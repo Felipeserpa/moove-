@@ -2,14 +2,21 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   .presentation {
-    height: 100vh;
-    background-image: url(/foto1.jpg);
+    min-height: 100vh;
+    background-image: url(/cuidador.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
     @media (max-width: 930px) {
-      height: 90vh;
+      min-height: 90vh;
+      align-items: flex-start;
     }
   }
 
@@ -26,34 +33,43 @@ const Container = styled.div`
   }
 
   .presentation div {
-    padding-top: 5rem;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+
     @media (max-width: 930px) {
+      max-width: 100%;
       padding-top: 20px;
     }
   }
 
   .presentation h1 {
     display: block;
-    width: 700px;
-    font-size: 5rem;
+    font-size: 3rem;
     position: relative;
     color: ${(props) => props.theme.transparent};
-    animation: text_reveal 0.5 ease forwards;
-    animation-delay: 1.5s;
+    animation: text_reveal 0.5s ease forwards;
     padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
   }
 
   .presentation h1:nth-child(1) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
   }
 
   .presentation h1:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 1s;
   }
 
   .presentation h1:nth-child(3) {
     animation: text_reveal_name 0.1s ease forwards;
     animation-delay: 3s;
+    color: #9c5000;
   }
 
   .presentation h1 span {
@@ -61,51 +77,10 @@ const Container = styled.div`
     top: 0;
     left: 0;
     height: 100%;
-    width: 0;
-    animation: text_reveal_box 1s ease;
-    animation-delay: 0.3s;
-    background-color: #9c5000;
-  }
-
-  .presentation h1:nth-child(1) span {
+    width: 20;
+    animation: text_reveal_box 1s ease forwards;
+    background-color: rgb(156, 80, 0);
     animation-delay: 0.5s;
-  }
-
-  .presentation h1:nth-child(2) span {
-    animation-delay: 1.5s;
-  }
-
-  .presentation h1:nth-child(3) span {
-    animation-delay: 2.5s;
-  }
-
-  .presentation button {
-    display: inline-block;
-    padding: 1rem 4.7rem;
-    color: ${(props) => props.theme.secondaryColor};
-    background-color: transparent;
-    border: 0.2rem solid ${(props) => props.theme.secondaryColor};
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    transition: 0.6s;
-    cursor: pointer;
-  }
-
-  .presentation button:hover {
-    color: #01394e;
-    font-weight: 700;
-    background-color: ${(props) => props.theme.secondaryColor};
-  }
-
-  /* keyframes ============================================== */
-  @keyframes text_reveal_name {
-    100% {
-      color: #9c5000;
-    }
   }
 
   @keyframes text_reveal {
@@ -113,15 +88,34 @@ const Container = styled.div`
       color: aliceblue;
     }
   }
+  /* ... (rest of your CSS) */
 
-  @keyframes text_reveal_box {
-    50% {
-      width: 100%;
-      left: 0;
+  .presentation button {
+    display: inline-block;
+    padding: 1.5rem 3rem; /* Aumenta o padding para melhor aparência */
+    font-size: 1.4rem; /* Aumenta um pouco o tamanho da fonte */
+    background-color: #1da851; /* Verde do WhatsApp (ou sua cor preferida) */
+    color: white; /* Cor do texto branca para contraste */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Arredonda os cantos (ajuste o valor conforme preferir) */
+    font-weight: 600; /* Deixa o texto um pouco mais negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 0.1rem; /* Espaçamento entre as letras */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para os efeitos hover */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar por cima */
+    width: auto; /* Largura automática */
+
+    &:hover {
+      background-color: #1da851; /* Verde mais escuro no hover */
+      transform: translateY(-2px); /* Levemente para cima no hover */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
     }
-    100% {
-      width: 0;
-      left: 100%;
+
+    /* Estilos para telas menores (opcional) */
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
     }
   }
 `;

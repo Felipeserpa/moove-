@@ -11,16 +11,17 @@ export default function About() {
             <article>
               <p>Olá,Somos a MOOVE +</p>
               <p>
-                Na MOOVE+, oferecemos serviços de transporte especialmente
-                pensados para os idosos, garantindo viagens seguras e
-                confortáveis.
+                Somos uma empresa dedicada ao transporte seguro e confortável
+                para idosos, oferecendo um atendimento humanizado e acolhedor.
+                Nosso objetivo é proporcionar mobilidade com respeito e carinho,
+                garantindo que cada trajeto seja uma experiência tranquila e
+                digna.
               </p>
               <p>Nossos diferenciais</p>
               <ul>
                 <li>Transporte exclusivo</li>
                 <li>Motoristas experientes e atenciosos</li>
                 <li>Conforto</li>
-                <li>Veículos adaptados</li>
                 <li>Preços acessíveis</li>
               </ul>
               <p>

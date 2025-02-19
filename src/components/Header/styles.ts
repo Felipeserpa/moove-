@@ -11,7 +11,7 @@ const Container = styled.div`
     transition: 0.3s ease-in-out;
 
     &.active {
-      background-color: #0123339f;
+      background-color: rgba(234, 238, 240, 0.62);
       border-bottom: 1px solid #9c5000;
       backdrop-filter: blur(0.8rem);
       padding: 1rem;

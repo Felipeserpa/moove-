@@ -16,8 +16,8 @@ export default function Presentation() {
             Moove +
             <span />
           </h1>
-          <div className="relative inset-x-0 top-0 h-10 flex justify-center items-center">
-            <p className="text-center">
+          <div>
+            <p>
               Oferecemos transporte exclusivo
               <br /> e seguro para idosos, garantido conforto <br /> e bem-estar
               durante todo trajeto

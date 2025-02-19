@@ -36,7 +36,7 @@ export default function Header() {
         <nav>
           <div id="logo">
             <a href="/">
-              <img src="/logo.png" alt="" style={{ width: 110 }} />
+              <img src="/logo.png" alt="" style={{ width: 115 }} />
             </a>
           </div>
           <div className={active ? 'nav-menu  active' : 'nav-menu '}>

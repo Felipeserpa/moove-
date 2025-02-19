@@ -6,7 +6,7 @@ export default function About() {
     <Container>
       <section id="about" className="section-blue">
         <div className="container">
-          <h1 className="section-title text-white">Sobre Mim</h1>
+          <h1 className="section-title text-white">Sobre Nós</h1>
           <div className="section-container">
             <article>
               <p>Olá,Somos a MOOVE +</p>
@@ -28,9 +28,11 @@ export default function About() {
                 Agende sua próxima viagem conosco e experimente a diferença!
               </p>
             </article>
-            <picture data-aos="fade-up">
-              /<img src="/logo.png" alt="avatar.webp" />
-            </picture>
+            <div className="container-logo">
+              <picture data-aos="fade-up ">
+                /<img src="/logo.png" alt="avatar.webp" />
+              </picture>
+            </div>
           </div>
         </div>
       </section>

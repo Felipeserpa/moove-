@@ -19,8 +19,8 @@ export default function Presentation() {
           <div>
             <p>
               Oferecemos transporte exclusivo
-              <br /> e seguro para idosos, garantido conforto <br /> e bem-estar
-              durante todo trajeto
+              <br /> e seguro para idosos, garantindo conforto <br /> e
+              bem-estar durante todo trajeto
             </p>
           </div>
           <a

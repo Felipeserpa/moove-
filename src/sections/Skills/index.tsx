@@ -39,7 +39,7 @@ export default function Skills() {
                   </ul>
                   <p>
                     Na MOOVE+,mais do que transportar,cuidamos de cada detalhe
-                    para que nossos passageiros sinta-se acolhidos e
+                    para que nossos passageiros sintam-se acolhidos e
                     respeitados.
                   </p>
                   <p>Entre em contato e agende seu transporte conosco!</p>

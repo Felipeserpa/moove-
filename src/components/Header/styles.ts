@@ -9,12 +9,13 @@ const Container = styled.div`
     padding: 2rem 0;
     z-index: 2;
     transition: 0.3s ease-in-out;
+    background-color: white;
 
     &.active {
       background-color: rgba(234, 238, 240, 0.62);
       border-bottom: 1px solid #9c5000;
       backdrop-filter: blur(0.8rem);
-      padding: 1rem;
+      padding: 1rem 0;
       @media (max-width: 930px) {
         padding: 0.5rem 0;
       }
@@ -29,7 +30,7 @@ const Container = styled.div`
     justify-content: space-between;
     width: 100%;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    //transition: all 0.3s ease-in-out;
     @media (max-width: 920px) {
       position: relative;
       display: flex;
@@ -52,7 +53,7 @@ const Container = styled.div`
       background-color: #012333;
       width: 100%;
       text-align: center;
-      opacity: 0.8;
+      //opacity: 0.8;
       transition: 0.4s;
       z-index: 2;
     }

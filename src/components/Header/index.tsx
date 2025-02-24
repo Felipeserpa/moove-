@@ -2,9 +2,14 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useLayoutEffect, useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaInstagramSquare,
+} from 'react-icons/fa';
 import Container from './styles';
-
+import { FaWhatsapp } from 'react-icons/fa';
 export default function Header() {
   const [active, setMode] = useState(false);
   const toggleMode = () => {
@@ -72,11 +77,15 @@ export default function Header() {
                 setMode(false);
               }}
             >
-              <a href="" target="_blank" rel="noreferrer">
-                <FaGithub />
+              <a
+                href=" https://wa.me/message/VOG6YD5POXPPG1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
               </a>
               <a href="" target="_blank" rel="noreferrer">
-                <FaLinkedin />
+                <FaInstagramSquare />
               </a>
               <a href="" target="_blank" rel="noreferrer">
                 <FaEnvelope />

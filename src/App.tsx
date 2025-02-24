@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './sections/clientes';
 import Hero from './sections/Hero';
-import Skills from './sections/Skills';
+import Skills from './sections/Serviço';
 import GlobalStyles from './assets/styles/GlobalStyles';
 import theme from './assets/styles/theme';
 import { Analytics } from '@vercel/analytics/react';

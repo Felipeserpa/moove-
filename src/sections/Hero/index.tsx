@@ -1,4 +1,5 @@
 import Container from './styles';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Presentation() {
   return (
@@ -28,7 +29,10 @@ export default function Presentation() {
             type="button"
             className="cta"
           >
-            <button type="button">Agende um horário conosco</button>
+            <button type="button">
+              Agende um horário conosco{' '}
+              <FaWhatsapp style={{ fontSize: '25px' }} />
+            </button>
           </a>
         </div>
       </div>

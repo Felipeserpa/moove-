@@ -15,9 +15,9 @@ import imagem6 from '../../img/moove6.jpg';
 import { useState } from 'react';
 
 export default function Cards() {
-  const [imagemTelaCheia, setImagemTelaCheia] = useState(null);
+  const [imagemTelaCheia, setImagemTelaCheia] = useState<string | null>(null);
 
-  const toggleTelaCheia = (url: string) => {
+  const toggleTelaCheia = (url: string | null) => {
     setImagemTelaCheia(imagemTelaCheia === url ? null : url);
   };
 
@@ -31,7 +31,6 @@ export default function Cards() {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide style={{ width: '450px', height: '400px' }}>

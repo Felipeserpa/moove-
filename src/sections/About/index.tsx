@@ -1,6 +1,6 @@
 import Loading from '../../components/Loading';
 import Container from './styles';
-
+//import ReactPlayer from 'react-player';
 export default function About() {
   return (
     <Container>
@@ -27,7 +27,13 @@ export default function About() {
               <p>
                 Agende sua próxima viagem conosco e experimente a diferença!
               </p>
+
+              <video width="640" height="360" controls>
+                <source src="../../img/moovevideo.mp4" type="video/mp4" />
+                Seu navegador não suporta a tag de vídeo.
+              </video>
             </article>
+
             <div className="container-logo">
               <picture data-aos="fade-up ">
                 /<img src="/logo.png" alt="avatar.webp" />

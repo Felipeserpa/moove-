@@ -7,13 +7,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import imagem1 from '../../img/moove1.jpg';
-import imagem02 from '../../img/moove2.jpg';
+
 import imagem3 from '../../img/moove3.jpg';
 import imagem4 from '../../img/moove4.jpg';
 import imagem5 from '../../img/moove5.jpg';
 import imagem6 from '../../img/moove6.jpg';
-import imagem7 from '../../img/moove07.jpg';
+//import imagem7 from '../../img/moove07.jpg';
 import imagem8 from '../../img/moove08.jpg';
+import imagem9 from '../../img/moove9.jpg';
 
 import { useState } from 'react';
 
@@ -44,14 +45,20 @@ export default function Cards() {
             onClick={() => toggleTelaCheia(imagem1)}
           />
         </SwiperSlide>
+
         <SwiperSlide>
           <img
-            src={imagem02}
-            alt="Imagem 2"
-            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
-            onClick={() => toggleTelaCheia(imagem02)}
+            src={imagem9}
+            alt="Imagem 3"
+            style={{
+              width: '100%',
+              height: '400px',
+              objectFit: 'cover',
+            }}
+            onClick={() => toggleTelaCheia(imagem9)}
           />
         </SwiperSlide>
+
         <SwiperSlide>
           <img
             src={imagem3}
@@ -62,6 +69,14 @@ export default function Cards() {
               objectFit: 'cover',
             }}
             onClick={() => toggleTelaCheia(imagem3)}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={imagem6}
+            alt="Imagem 5"
+            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+            onClick={() => toggleTelaCheia(imagem6)}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -80,22 +95,7 @@ export default function Cards() {
             onClick={() => toggleTelaCheia(imagem5)}
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={imagem6}
-            alt="Imagem 5"
-            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
-            onClick={() => toggleTelaCheia(imagem6)}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src={imagem7}
-            alt="Imagem 5"
-            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
-            onClick={() => toggleTelaCheia(imagem7)}
-          />
-        </SwiperSlide>
+
         <SwiperSlide>
           <img
             src={imagem8}

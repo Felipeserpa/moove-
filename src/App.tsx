@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { Toaster } from 'react-hot-toast';
-import About from './sections/About';
+//import About from './sections/About';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -21,7 +21,7 @@ function App() {
       <Hero />
       <Skills />
       <Portfolio />
-      <About />
+
       <Contact />
       <Footer />
     </ThemeProvider>

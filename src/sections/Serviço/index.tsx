@@ -1,4 +1,3 @@
-
 import { FaHospital, FaNotesMedical, FaClinicMedical } from 'react-icons/fa';
 
 import { IoBarbellOutline } from 'react-icons/io5';
@@ -17,10 +16,10 @@ export default function Skills() {
             <div className="section-article">
               <p>
                 Nosso serviço de transporte é pensado para aqueles que precisam
-                de um deslocamento seguro e confortável para consultas
-                médicas,fisioterapias,academias,eventos e muito mais.Com um
-                olhar humanizado,buscamos proporcionar não apenas uma viagem,mas
-                um momento de acolhimento e bem-estar.
+                de um deslocamento seguro e confortável para consultas médicas e
+                fisioterapias academias eventos e muito mais.Com um olhar
+                humanizado,buscamos proporcionar não apenas uma viagem,mas um
+                momento de acolhimento e bem-estar.
               </p>
 
               <p>Nossos diferenciais:</p>
@@ -30,7 +29,7 @@ export default function Skills() {
                 <p>Segurança e tranquilidade em cada trajeto</p>
               </ul>
               <p>
-                Na MOOVE+,mais do que transportar,cuidamos de cada detalhe para
+                Na MOOVE+ mais do que transportar cuidamos de cada detalhe para
                 que nossos passageiros sintam-se acolhidos e respeitados.
               </p>
               <p>Entre em contato e agende seu transporte conosco!</p>

@@ -64,7 +64,7 @@ export default function Header() {
               </li>
 
               <li>
-                <a href="#about">SOBRE</a>
+                <a href="#cliente">GALERIA</a>
               </li>
               <li>
                 <a href="#contact">CONTATO</a>

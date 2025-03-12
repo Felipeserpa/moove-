@@ -49,7 +49,15 @@ export default function Cards() {
           />
         </SwiperSlide>
 
-        <SwiperSlide style={{ width: '470px', height: '400px' }}></SwiperSlide>
+        <SwiperSlide style={{ width: '470px', height: '400px' }}>
+          <ReactPlayer
+            url={localVideo}
+            controls
+            width="100%"
+            height="100%"
+            style={{ objectFit: 'cover' }}
+          />
+        </SwiperSlide>
 
         <SwiperSlide>
           <img

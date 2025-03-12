@@ -17,7 +17,7 @@ import imagem8 from '../../img/moove08.jpg';
 import imagem9 from '../../img/moove9.jpg';
 
 import ReactPlayer from 'react-player';
-import localVideo from '../../img/moovemais.mp4'; // Ajuste o c
+import localVideo from '../../img/mooveMais.mp4'; // Ajuste o c
 
 import { useState } from 'react';
 

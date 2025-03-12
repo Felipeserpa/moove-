@@ -50,17 +50,15 @@ export default function Cards() {
         </SwiperSlide>
 
         <SwiperSlide style={{ width: '470px', height: '400px' }}>
-          <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
-            {' '}
-            {/* Adicionado overflow: 'hidden' */}
-            <ReactPlayer
-              url={localVideo}
-              controls
-              width="100%"
-              height="100%"
-              style={{ objectFit: 'cover' }} // Ou 'contain'
-            />
-          </div>
+          {' '}
+          {/* Adicionado overflow: 'hidden' */}
+          <ReactPlayer
+            url={localVideo}
+            controls
+            width="100%"
+            height="100%"
+            style={{ objectFit: 'cover' }} // Ou 'contain'
+          />
         </SwiperSlide>
 
         <SwiperSlide>

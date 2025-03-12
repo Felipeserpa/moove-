@@ -6,7 +6,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import { useState, useRef } from 'react';
-import VideoPlayer from '../player';
 
 import imagem1 from '../../img/moove1.jpg';
 import imagem3 from '../../img/moove3.jpg';
@@ -17,10 +16,13 @@ import imagem8 from '../../img/moove08.jpg';
 import imagem9 from '../../img/moove9.jpg';
 
 import mooves from '../../assets/videos/moove.mp4';
+import type { Swiper as SwiperCore } from 'swiper'; // Importe o tipo SwiperCore
+import type { SwiperRef } from 'swiper/react'; // Importe o tipo SwiperRef
 
 export default function Cards() {
+  const swiperRef = useRef<SwiperRef | null>(null); // Use SwiperRef para tipar a referência
   const [activeSlide, setActiveSlide] = useState(0); // Estado para controlar o slide ativo
-  const swiperRef = useRef(null); // Referência para o swiper
+
   const [telaCheia, setTelaCheia] = useState<{
     url: string | null;
     isVideo: boolean;
@@ -35,15 +37,18 @@ export default function Cards() {
   return (
     <div style={{ position: 'relative' }}>
       <Swiper
-        ref={swiperRef} // Referência do Swiper
+        ref={swiperRef} // Agora o tipo da ref é compatível
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={35}
         slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)} // Atualiza o slide ativo
+        onSlideChange={(swiper: SwiperCore) =>
+          setActiveSlide(swiper.activeIndex)
+        }
       >
+        {/* Slide 1 */}
         <SwiperSlide>
           <img
             src={imagem1}
@@ -52,6 +57,8 @@ export default function Cards() {
             onClick={() => toggleTelaCheia(imagem1)}
           />
         </SwiperSlide>
+
+        {/* Slide 2 */}
         <SwiperSlide>
           <img
             src={imagem9}
@@ -60,30 +67,35 @@ export default function Cards() {
             onClick={() => toggleTelaCheia(imagem9)}
           />
         </SwiperSlide>
+
+        {/* Slide 3 (Vídeo) */}
         <SwiperSlide>
           <div
             style={{
-              width: '100%', // Largura do contêiner
-              height: '400px', // Altura do contêiner
+              width: '100%',
+              height: '400px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
               overflow: 'hidden',
             }}
+            onClick={() => toggleTelaCheia(mooves, true)} // Abrir vídeo em tela cheia
           >
-            {/* Passando a prop isActive para VideoPlayer */}
             <video
-              src={mooves} // Caminho correto para o vídeo
+              src={mooves}
               controls={true}
               autoPlay={activeSlide === 2} // Reproduzir apenas no slide ativo
+              muted // Necessário para autoplay em alguns navegadores
               style={{
-                width: '100%', // Ocupa 100% da largura do contêiner
-                height: '100%', // Ocupa 100% da altura do contêiner
+                width: '100%',
+                height: '100%',
                 objectFit: 'cover', // Cobre o espaço disponível sem distorcer
               }}
             />
           </div>
         </SwiperSlide>
+
+        {/* Slide 4 */}
         <SwiperSlide>
           <img
             src={imagem3}
@@ -92,7 +104,46 @@ export default function Cards() {
             onClick={() => toggleTelaCheia(imagem3)}
           />
         </SwiperSlide>
-        {/* Adicione os outros SwiperSlides como você fez antes */}
+
+        {/* Slide 5 */}
+        <SwiperSlide>
+          <img
+            src={imagem4}
+            alt="moove transportes"
+            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+            onClick={() => toggleTelaCheia(imagem4)}
+          />
+        </SwiperSlide>
+
+        {/* Slide 6 */}
+        <SwiperSlide>
+          <img
+            src={imagem5}
+            alt="moove transportes"
+            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+            onClick={() => toggleTelaCheia(imagem5)}
+          />
+        </SwiperSlide>
+
+        {/* Slide 7 */}
+        <SwiperSlide>
+          <img
+            src={imagem6}
+            alt="moove transportes"
+            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+            onClick={() => toggleTelaCheia(imagem6)}
+          />
+        </SwiperSlide>
+
+        {/* Slide 8 */}
+        <SwiperSlide>
+          <img
+            src={imagem8}
+            alt="moove transportes"
+            style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+            onClick={() => toggleTelaCheia(imagem8)}
+          />
+        </SwiperSlide>
       </Swiper>
 
       {/* Modal para tela cheia */}

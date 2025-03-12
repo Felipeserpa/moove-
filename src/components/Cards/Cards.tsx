@@ -49,16 +49,6 @@ export default function Cards() {
           />
         </SwiperSlide>
 
-        <SwiperSlide style={{ width: '470px', height: '400px' }}>
-          <ReactPlayer
-            url={localVideo}
-            controls
-            width="100%"
-            height="100%"
-            style={{ objectFit: 'cover' }}
-          />
-        </SwiperSlide>
-
         <SwiperSlide>
           <img
             src={imagem9}
@@ -118,7 +108,25 @@ export default function Cards() {
           />
         </SwiperSlide>
       </Swiper>
-
+      <div
+        style={{
+          width: '100%', // Aumenta a largura para ocupar todo o espaço disponível
+          height: '400px',
+          display: 'flex', // Habilita flexbox
+          justifyContent: 'center', // Centraliza horizontalmente
+          alignItems: 'center', // Centraliza verticalmente (opcional, dependendo do layout desejado)
+          padding: '30px',
+          marginTop: '30px',
+        }}
+      >
+        <ReactPlayer
+          url={localVideo}
+          controls
+          width="80%"
+          height="100%"
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
       {imagemTelaCheia && (
         <div
           style={{

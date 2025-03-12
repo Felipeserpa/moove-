@@ -120,7 +120,7 @@ export default function Cards() {
         }}
       >
         <ReactPlayer
-          url={localVideo}
+          url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
           controls
           width="80%"
           height="100%"

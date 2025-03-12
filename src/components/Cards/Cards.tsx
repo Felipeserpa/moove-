@@ -16,6 +16,9 @@ import imagem6 from '../../img/moove6.jpg';
 import imagem8 from '../../img/moove08.jpg';
 import imagem9 from '../../img/moove9.jpg';
 
+import ReactPlayer from 'react-player';
+import localVideo from '../../img/moovemais.mp4'; // Ajuste o c
+
 import { useState } from 'react';
 
 export default function Cards() {
@@ -40,16 +43,30 @@ export default function Cards() {
         <SwiperSlide style={{ width: '450px', height: '400px' }}>
           <img
             src={imagem1}
-            alt="Imagem 1"
+            alt="moove1"
             style={{ width: '100%', height: '400px', objectFit: 'cover' }}
             onClick={() => toggleTelaCheia(imagem1)}
           />
         </SwiperSlide>
 
+        <SwiperSlide style={{ width: '470px', height: '400px' }}>
+          <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            {' '}
+            {/* Adicionado overflow: 'hidden' */}
+            <ReactPlayer
+              url={localVideo}
+              controls
+              width="100%"
+              height="100%"
+              style={{ objectFit: 'cover' }} // Ou 'contain'
+            />
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <img
             src={imagem9}
-            alt="Imagem 3"
+            alt="moove transportes"
             style={{
               width: '100%',
               height: '400px',
@@ -62,7 +79,7 @@ export default function Cards() {
         <SwiperSlide>
           <img
             src={imagem3}
-            alt="Imagem 3"
+            alt="moove transportes"
             style={{
               width: '100%',
               height: '400px',
@@ -74,7 +91,7 @@ export default function Cards() {
         <SwiperSlide>
           <img
             src={imagem6}
-            alt="Imagem 5"
+            alt="moove transportes"
             style={{ width: '100%', height: '400px', objectFit: 'cover' }}
             onClick={() => toggleTelaCheia(imagem6)}
           />
@@ -82,7 +99,7 @@ export default function Cards() {
         <SwiperSlide>
           <img
             src={imagem4}
-            alt="Imagem 4"
+            alt="moove transportes"
             style={{ width: '100%', height: '400px', objectFit: 'cover' }}
             onClick={() => toggleTelaCheia(imagem4)}
           />
@@ -90,7 +107,7 @@ export default function Cards() {
         <SwiperSlide>
           <img
             src={imagem5}
-            alt="Imagem 5"
+            alt="moove transportes"
             style={{ width: '100%', height: '400px', objectFit: 'cover' }}
             onClick={() => toggleTelaCheia(imagem5)}
           />
@@ -99,7 +116,7 @@ export default function Cards() {
         <SwiperSlide>
           <img
             src={imagem8}
-            alt="Imagem 5"
+            alt="moove transportes"
             style={{ width: '100%', height: '400px', objectFit: 'cover' }}
             onClick={() => toggleTelaCheia(imagem8)}
           />

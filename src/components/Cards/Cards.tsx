@@ -17,7 +17,7 @@ import imagem8 from '../../img/moove08.jpg';
 import imagem9 from '../../img/moove9.jpg';
 
 import ReactPlayer from 'react-player';
-import localVideo from '../../img/mooveMais.mp4'; // Ajuste o c
+import localVideo from '../../img/moove.mp4'; // Ajuste o c
 
 import { useState } from 'react';
 
@@ -49,7 +49,15 @@ export default function Cards() {
           />
         </SwiperSlide>
 
-        <SwiperSlide style={{ width: '470px', height: '400px' }}></SwiperSlide>
+        <SwiperSlide style={{ width: '470px', height: '400px' }}>
+          <ReactPlayer
+            url={localVideo}
+            controls
+            width="100%"
+            height="100%"
+            style={{ objectFit: 'cover' }}
+          />
+        </SwiperSlide>
 
         <SwiperSlide>
           <img

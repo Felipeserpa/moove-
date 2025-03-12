@@ -168,13 +168,24 @@ export default function Cards() {
               src={telaCheia.url}
               controls
               autoPlay
-              style={{ maxWidth: '90%', maxHeight: '90%' }}
+              style={{
+                maxWidth: '90%',
+                maxHeight: '90%',
+                width: 'auto', // Mantém a proporção do vídeo
+                height: 'auto', // Mantém a proporção do vídeo
+              }}
             />
           ) : (
             <img
               src={telaCheia.url}
               alt="Fullscreen"
-              style={{ maxWidth: '90%', maxHeight: '90%' }}
+              style={{
+                maxWidth: '90%',
+                maxHeight: '90%',
+                width: 'auto', // Mantém a proporção da imagem
+                height: 'auto', // Mantém a proporção da imagem
+                objectFit: 'contain', // Garante que a imagem inteira seja visível
+              }}
             />
           )}
         </div>

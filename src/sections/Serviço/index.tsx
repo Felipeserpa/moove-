@@ -17,9 +17,9 @@ export default function Skills() {
               <p>
                 Nosso serviço de transporte é pensado para aqueles que precisam
                 de um deslocamento seguro e confortável para consultas médicas e
-                fisioterapias academias eventos e muito mais.Com um olhar
-                humanizado,buscamos proporcionar não apenas uma viagem,mas um
-                momento de acolhimento e bem-estar.
+                fisioterapias academias eventos,muito mais.Com um olhar
+                humanizado buscamos proporcionar não apenas uma viagem segura
+                mas um momento de acolhimento e bem-estar.
               </p>
 
               <p>Nossos diferenciais:</p>

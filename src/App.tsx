@@ -19,8 +19,8 @@ function App() {
       <GlobalStyles />
       <Header />
       <Hero />
-      <Skills />
       <Portfolio />
+      <Skills />
 
       <Contact />
       <Footer />

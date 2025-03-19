@@ -12,11 +12,12 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 120px;
 
     @media (max-width: 930px) {
       min-height: 90vh;
       align-items: flex-start;
+      padding: 60px 20px;
     }
   }
 
@@ -88,34 +89,176 @@ const Container = styled.div`
       color: aliceblue;
     }
   }
-  /* ... (rest of your CSS) */
 
   .presentation button {
     display: inline-block;
-    padding: 1.5rem 3rem; /* Aumenta o padding para melhor aparência */
-    font-size: 1.4rem; /* Aumenta um pouco o tamanho da fonte */
-    background-color: #1da851; /* Verde do WhatsApp (ou sua cor preferida) */
-    color: white; /* Cor do texto branca para contraste */
-    border: none; /* Remove a borda padrão */
-    border-radius: 10px; /* Arredonda os cantos (ajuste o valor conforme preferir) */
-    font-weight: 600; /* Deixa o texto um pouco mais negrito */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    letter-spacing: 0.1rem; /* Espaçamento entre as letras */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
-    transition: all 0.3s ease; /* Adiciona uma transição suave para os efeitos hover */
-    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar por cima */
-    width: auto; /* Largura automática */
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+    background-color: #1da851;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: auto;
 
     &:hover {
-      background-color: #1da851; /* Verde mais escuro no hover */
-      transform: translateY(-2px); /* Levemente para cima no hover */
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
+      background-color: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     }
 
-    /* Estilos para telas menores (opcional) */
     @media (max-width: 768px) {
       font-size: 1.2rem;
       padding: 1rem 2rem;
+    }
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+  }
+
+  .box > div {
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+
+  .box h1 {
+    font-size: 34px;
+    color: #333;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
+  }
+
+  .box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .box button {
+    font-size: 18px;
+    padding: 12px 20px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  }
+
+  .video-container {
+    width: 50%;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 900px;
+    animation: fadeInUp 1.2s ease-out;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .stats div {
+    text-align: center;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .stats h2 {
+    font-size: 28px;
+    color: #007bff;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  .stats p {
+    font-size: 16px;
+    color: #e2e2dc;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .box button {
+    font-size: 18px;
+    padding: 12px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 200px; /* Defina a largura mínima */
+    min-height: 50px; /* Defina a altura mínima */
+    border-radius: 50px;
+    background-color: #25d366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      /* Remover estilos responsivos desnecessários */
+      margin: 0 auto; /* Manter o botão centralizado */
     }
   }
 `;

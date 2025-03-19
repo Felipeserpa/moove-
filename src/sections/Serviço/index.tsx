@@ -14,25 +14,17 @@ export default function Skills() {
           <h1 className="section-title text-white">SERVIÇOS</h1>
           <div className="section-container">
             <div className="section-article">
-              <p>
+              <p
+                style={{
+                  width: '100%',
+                  fontSize: '2rem',
+                }}
+              >
                 Nosso serviço de transporte é pensado para aqueles que precisam
-                de um deslocamento seguro e confortável para consultas médicas e
-                fisioterapias academias eventos,muito mais.Com um olhar
-                humanizado buscamos proporcionar não apenas uma viagem segura
-                mas um momento de acolhimento e bem-estar.
+                de um deslocamento seguro e confortável.Nosso serviço de
+                transporte é pensado para aqueles que precisam de um
+                deslocamento seguro e confortável.
               </p>
-
-              <p>Nossos diferenciais:</p>
-              <ul>
-                <p>Veiculo confortável e seguro</p>
-                <p>Atendimento humanizado e atencioso</p>
-                <p>Segurança e tranquilidade em cada trajeto</p>
-              </ul>
-              <p>
-                Na MOOVE+ mais do que transportar cuidamos de cada detalhe para
-                que nossos passageiros sintam-se acolhidos e respeitados.
-              </p>
-              <p>Entre em contato e agende seu transporte conosco!</p>
             </div>
             <p
               style={{
@@ -82,6 +74,28 @@ export default function Skills() {
                 <IoIosAdd className="icon" />
               </div>
             </div>
+
+            <p
+              style={{
+                textAlign: 'center',
+                padding: '20px',
+                width: '100%',
+                fontSize: '25px',
+              }}
+            >
+              Nossos diferenciais.
+            </p>
+            <p
+              style={{
+                textAlign: 'center',
+                padding: '20px',
+                width: '100%',
+                fontSize: '20px',
+              }}
+            >
+              Veiculo confortável e seguro Atendimento humanizado e atencioso
+              Segurança e tranquilidade em cada trajeto.
+            </p>
           </div>
         </div>
       </section>

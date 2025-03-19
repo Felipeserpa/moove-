@@ -60,11 +60,11 @@ export default function Header() {
                 <a href="#inicio">HOME</a>
               </li>
               <li>
-                <a href="#skills">SERVIÇOS</a>
+                <a href="#cliente">MISSÂO</a>
               </li>
 
               <li>
-                <a href="#cliente">GALERIA</a>
+                <a href="#skills">SERVIÇOS</a>
               </li>
               <li>
                 <a href="#contact">CONTATO</a>

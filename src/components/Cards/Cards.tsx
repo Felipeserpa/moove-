@@ -44,6 +44,11 @@ export default function Cards() {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
+        breakpoints={{
+          1024: { slidesPerView: 3 }, // 3 imagens em telas grandes
+          768: { slidesPerView: 2 }, // 2 imagens em tablets
+          480: { slidesPerView: 1 }, // 1 imagem em telas pequenas
+        }}
         onSlideChange={(swiper: SwiperCore) =>
           setActiveSlide(swiper.activeIndex)
         }
@@ -69,31 +74,6 @@ export default function Cards() {
         </SwiperSlide>
 
         {/* Slide 3 (Vídeo) */}
-        <SwiperSlide>
-          <div
-            style={{
-              width: '100%',
-              height: '400px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              overflow: 'hidden',
-            }}
-            onClick={() => toggleTelaCheia(mooves, true)} // Abrir vídeo em tela cheia
-          >
-            <video
-              src={mooves}
-              controls={true}
-              autoPlay={activeSlide === 2} // Reproduzir apenas no slide ativo
-              muted // Necessário para autoplay em alguns navegadores
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover', // Cobre o espaço disponível sem distorcer
-              }}
-            />
-          </div>
-        </SwiperSlide>
 
         {/* Slide 4 */}
         <SwiperSlide>

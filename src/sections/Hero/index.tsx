@@ -54,10 +54,17 @@ export default function Presentation() {
           style={{ width: '50%', textAlign: 'left', padding: '10px' }}
           id="inicio"
         >
-          <h1 style={{ fontSize: '34px', color: '#333', marginBottom: '10px' }}>
+          <h1 style={{ fontSize: '34px', color: '#007', marginBottom: '10px' }}>
             Olá, somos a Moove +
           </h1>
-          <p style={{ fontSize: '18px', color: '#555', marginBottom: '20px' }}>
+          <p
+            style={{
+              fontSize: '18px',
+              lineHeight: '1.5',
+              color: '#666',
+              marginBottom: '20px',
+            }}
+          >
             Oferecemos transporte exclusivo e seguro para idosos, garantindo
             conforto e bem-estar durante todo o trajeto.
           </p>
@@ -65,7 +72,7 @@ export default function Presentation() {
             <button
               type="button"
               style={{
-                backgroundColor: '#007bff',
+                backgroundColor: '#017410',
                 color: 'white',
                 border: 'none',
                 padding: '12px 20px',

@@ -83,7 +83,7 @@ export default function Skills() {
                 fontSize: '25px',
               }}
             >
-              Nossos diferenciais.
+              Nossos diferenciais:
             </p>
             <p
               style={{

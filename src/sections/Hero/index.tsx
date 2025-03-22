@@ -54,14 +54,20 @@ export default function Presentation() {
           style={{ width: '50%', textAlign: 'left', padding: '10px' }}
           id="inicio"
         >
-          <h1 style={{ fontSize: '34px', color: '#007', marginBottom: '10px' }}>
+          <h1
+            style={{
+              fontSize: '34px',
+              color: ' #9c5000',
+              marginBottom: '10px',
+            }}
+          >
             Olá, somos a Moove +
           </h1>
           <p
             style={{
               fontSize: '18px',
               lineHeight: '1.5',
-              color: '#666',
+              color: '#007',
               marginBottom: '20px',
             }}
           >

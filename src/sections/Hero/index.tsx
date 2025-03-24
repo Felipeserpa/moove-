@@ -12,6 +12,8 @@ export default function Presentation() {
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+
         if (playButtonRef.current) {
           // Verifica se playButtonRef.current existe
           playButtonRef.current.style.display = 'flex';

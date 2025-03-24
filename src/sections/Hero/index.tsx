@@ -1,18 +1,30 @@
-import { useRef } from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import React, { useRef, useState } from 'react';
+import { FaPlay, FaPause, FaWhatsapp } from 'react-icons/fa';
 import Container from './styles';
 import mooves from '../../assets/videos/moove.mp4';
 
 export default function Presentation() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const playButtonRef = useRef<HTMLDivElement | null>(null); // Ref para o div do botão
 
-  const handleClick = () => {
+  const handlePlayPause = () => {
     if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
+      if (isPlaying) {
         videoRef.current.pause();
+        if (playButtonRef.current) {
+          // Verifica se playButtonRef.current existe
+          playButtonRef.current.style.display = 'flex';
+        }
+      } else {
+        videoRef.current.play();
+        videoRef.current.muted = false;
+        if (playButtonRef.current) {
+          // Verifica se playButtonRef.current existe
+          playButtonRef.current.style.display = 'none';
+        }
       }
+      setIsPlaying(!isPlaying);
     }
   };
 
@@ -55,11 +67,7 @@ export default function Presentation() {
           id="inicio"
         >
           <h1
-            style={{
-              fontSize: '34px',
-              color: ' #9c5000',
-              marginBottom: '10px',
-            }}
+            style={{ fontSize: '34px', color: '#9c5000', marginBottom: '10px' }}
           >
             Olá, somos a Moove +
           </h1>
@@ -99,12 +107,11 @@ export default function Presentation() {
         {/* Vídeo à direita */}
         <div
           className="video-container"
-          style={{ width: '50%', textAlign: 'center' }}
+          style={{ width: '50%', textAlign: 'center', position: 'relative' }}
         >
           <video
             ref={videoRef}
             src={mooves}
-            onClick={handleClick}
             style={{
               width: '100%',
               height: 'auto',
@@ -114,6 +121,27 @@ export default function Presentation() {
               cursor: 'pointer',
             }}
           />
+          <div
+            ref={playButtonRef}
+            onClick={handlePlayPause}
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              background: 'rgba(0, 0, 0, 0.5)',
+              color: 'white',
+              border: 'none',
+              padding: '10px',
+              borderRadius: '50%',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            {isPlaying ? <FaPause size={24} /> : <FaPlay size={24} />}
+          </div>
         </div>
       </div>
 

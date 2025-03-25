@@ -21,9 +21,10 @@ export default function Skills() {
                 }}
               >
                 Nosso serviço de transporte é pensado para aqueles que precisam
-                de um deslocamento seguro e confortável.Nosso serviço de
-                transporte é pensado para aqueles que precisam de um
-                deslocamento seguro e confortável.
+                de um deslocamento seguro e confortável. Oferecemos veículos
+                modernos e motoristas experientes para sua total tranquilidade.
+                Conte com nossa pontualidade e compromisso para chegar ao seu
+                destino com segurança.
               </p>
             </div>
             <p
